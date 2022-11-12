@@ -21,8 +21,11 @@ NmraDcc Dcc;
 
 void notifyDccAccTurnoutOutput(uint16_t Addr, uint8_t Direction, uint8_t OutputPower) {
 
+  // Get the current decoder address
+  uint16_t myAddress = Dcc.getAddr();
+
   // Output 1
-  if(Addr == DECODER_ADDR) {
+  if(Addr == myAddress) {
     if(Direction == 0) {
       digitalWrite(OUT1_PIN_STRAIGHT, HIGH);
       delay(IMPULSE_DURATION);
@@ -37,7 +40,7 @@ void notifyDccAccTurnoutOutput(uint16_t Addr, uint8_t Direction, uint8_t OutputP
   }
 
   // Output 2
-  else if(Addr == DECODER_ADDR + 1) {
+  else if(Addr == myAddress + 1) {
     if(Direction == 0) {
       digitalWrite(OUT2_PIN_STRAIGHT, HIGH);
       delay(IMPULSE_DURATION);
