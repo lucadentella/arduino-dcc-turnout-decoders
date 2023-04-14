@@ -9,6 +9,7 @@ This repository contains all the resources for my tutorials about how to build D
 ## :link: Links
 
  - [Youtube, Tutorial #1](https://youtu.be/FdMyOsOrDqg)
+ - [Youtube, Tutorial #2](https://youtu.be/kijxEFWHnvc)
  - [Youtube, Playlist](https://youtube.com/playlist?list=PL45uNmSXju7mn3bMtVVPlFQmpD3mUI5mi)
  
  - [Officina del Modellismo](https://www.officinamodellismo.com/), to buy our products / *per acquistare i nostri prodotti*
