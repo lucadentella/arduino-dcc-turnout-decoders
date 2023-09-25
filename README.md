@@ -11,6 +11,7 @@ This repository contains all the resources for my tutorials about how to build D
  - [Youtube, Tutorial #1](https://youtu.be/FdMyOsOrDqg)
  - [Youtube, Tutorial #2](https://youtu.be/kijxEFWHnvc)
  - [Youtube, Tutorial #3](https://youtu.be/DjH3sCA5Gzo)
+ - [Youtube, ServoShield](https://youtu.be/rDGcTmMk3Rc)
  - [Youtube, Playlist](https://youtube.com/playlist?list=PL45uNmSXju7mn3bMtVVPlFQmpD3mUI5mi)
  
  - [Officina del Modellismo](https://www.officinamodellismo.com/), to buy our products / *per acquistare i nostri prodotti*

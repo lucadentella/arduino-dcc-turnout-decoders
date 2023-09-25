@@ -1,5 +1,7 @@
 # ServoShield
 
+![](https://github.com/lucadentella/arduino-dcc-turnout-decoders/raw/main/Documentation/ServoShield.jpg)
+
     ...accessory decoder to control up to 16 servos 
 	
 ## :factory: Part list
