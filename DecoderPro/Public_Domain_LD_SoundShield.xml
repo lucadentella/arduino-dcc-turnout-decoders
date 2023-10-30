@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../XSLT/decoder.xsl"?>
+<!-- Copyright (C) JMRI 2002, 2004, 2007 All rights reserved -->
+<!--                                                                        -->
+<!-- JMRI is free software; you can redistribute it and/or modify it under  -->
+<!-- the terms of version 2 of the GNU General Public License as published  -->
+<!-- by the Free Software Foundation. See the "COPYING" file for a copy     -->
+<!-- of this license.                                                       -->
+<!--                                                                        -->
+<!-- JMRI is distributed in the hope that it will be useful, but WITHOUT    -->
+<!-- ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or  -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License  -->
+<!-- for more details.                                                      -->
+
+<decoder-config xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/decoder.xsd" showEmptyPanes="no" >
+
+    <version author="Luca Dentella luca@dentella.it" version="1" lastUpdated="20230930"/>
+
+    <!-- SoundShield for Arduino																	-->
+    <!-- Project Repository https://github.com/lucadentella/arduino-dcc-turnout-decoders 			-->
+    
+    <decoder>
+
+        <family name="LD" mfg="Public-domain and DIY" >
+            <model model="SoundShield" lowVersionID="1" productID="257" />
+        </family>
+    
+        <programming direct="yes" paged="yes" register="no" ops="no" />
+        
+    <variables>
+    	
+      <variable CV="1" item="Short Address" default="4" >
+        <splitVal highCV="9" upperMask="XXXXXVVV" factor="1" offset="0" />
+        <label>Decoder Address:</label>
+        <tooltip>Accessory decoder address. CV1 - LSB. CV9 - MSB.</tooltip>
+      </variable>
+
+      <variable CV="7" item="Decoder Version" readOnly="yes" >
+        <decVal/>
+        <label>Decoder Version:</label>
+      </variable>
+      
+      <variable CV="8" item="Manufacturer" readOnly="yes" >
+        <decVal/>
+        <label>Manufacturer:</label>
+      </variable>
+
+      <variable CV="101" item="Track #1 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="102" item="Track #1 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="103" item="Track #2 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="104" item="Track #2 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="105" item="Track #3 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="106" item="Track #3 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="107" item="Track #4 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="108" item="Track #4 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="109" item="Track #5 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="110" item="Track #5 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="111" item="Track #6 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="112" item="Track #6 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="113" item="Track #7 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="114" item="Track #7 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="115" item="Track #8 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="116" item="Track #8 Volume" >
+        <decVal min="0" max="30" />
+      </variable> 
+
+      <variable CV="117" item="Track #9 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="118" item="Track #9 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="119" item="Track #10 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="120" item="Track #10 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="121" item="Track #11 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="122" item="Track #11 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="123" item="Track #12 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="124" item="Track #12 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="125" item="Track #13 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="126" item="Track #13 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="127" item="Track #14 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="128" item="Track #14 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="129" item="Track #15 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="130" item="Track #15 Volume" >
+        <decVal min="0" max="30" />
+      </variable>
+
+      <variable CV="131" item="Track #16 Play Mode" >
+      	<enumVal>
+      		<enumChoice choice="  SINGLE  " value="0" />
+      		<enumChoice choice="  LOOP  " value="1" />
+      	</enumVal>
+      </variable>
+      <variable CV="132" item="Track #16 Volume" >
+        <decVal min="0" max="30" />
+      </variable> 	  
+	  
+    </variables> 
+
+    <resets>
+      <factReset CV="8" default="1">
+        <label>Reset All CVs</label>
+      </factReset>
+    </resets>
+
+  </decoder>
+
+    <pane>  
+  	<name>Tracks</name>
+	<column>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #1&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #1 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #1 Volume" label="    Volume" /></column>
+        <column><display item="Track #1 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #2&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #2 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #2 Volume" label="    Volume" /></column>
+        <column><display item="Track #2 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #3&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #3 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #3 Volume" label="    Volume" /></column>
+        <column><display item="Track #3 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #4&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #4 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #4 Volume" label="    Volume" /></column>
+        <column><display item="Track #4 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #5&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #5 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #5 Volume" label="    Volume" /></column>
+        <column><display item="Track #5 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #6&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #6 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #6 Volume" label="    Volume" /></column>
+        <column><display item="Track #6 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #7&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #7 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #7 Volume" label="    Volume" /></column>
+        <column><display item="Track #7 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #8&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #8 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #8 Volume" label="    Volume" /></column>
+        <column><display item="Track #8 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #9&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #9 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #9 Volume" label="    Volume" /></column>
+        <column><display item="Track #9 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #10&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #10 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #10 Volume" label="    Volume" /></column>
+        <column><display item="Track #10 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #11&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #11 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #11 Volume" label="    Volume" /></column>
+        <column><display item="Track #11 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #12&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #12 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #12 Volume" label="    Volume" /></column>
+        <column><display item="Track #12 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #13&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #13 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #13 Volume" label="    Volume" /></column>
+        <column><display item="Track #13 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #14&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #14 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #14 Volume" label="    Volume" /></column>
+        <column><display item="Track #14 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #15&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #15 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #15 Volume" label="    Volume" /></column>
+        <column><display item="Track #15 Volume" format="hslider" label="" /></column>
+	</row>
+	<row>
+		<column><label label = "&lt;html&gt;&lt;strong&gt;Track #16&lt;/strong&gt;&lt;/html&gt;" /></column>
+        <column><display item="Track #16 Play Mode" label="    Play Mode  " /></column>
+		<column><display item="Track #16 Volume" label="    Volume" /></column>
+        <column><display item="Track #16 Volume" format="hslider" label="" /></column>
+	</row>		
+	</column>
+    </pane> 
+            
+</decoder-config>
