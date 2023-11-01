@@ -41,7 +41,7 @@ The [Arduino](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/
 
 *La sottocartella [Arduino](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Arduino) contiene i programmi (sketch) per realizzare i decoder mostrati nei video tutorials.*
  
-## :clipboard: Documentation
-The [Documentation](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Documentatiojn) subfolder contains partlist, schematics
+## :factory: Documentation
+The [Documentation](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Documentation) subfolder contains partlist, schematics
 
 *La sottocartella [Documentation](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Documentation) contiene la lista dei componenti e gli schemi elettrici*
