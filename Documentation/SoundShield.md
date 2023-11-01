@@ -22,6 +22,5 @@
 |DCC|5mm PCB terminal block|
 
 ## :credit_card: JQ6500
-- Modules on [Aliexpress](https://www.aliexpress.com/w/wholesale-pca9685-16-channel-servo-driver.html)
-
-- [How to recovery a bricked module]()
+- Modules on [Aliexpress](https://www.aliexpress.com/w/wholesale-jq6500.html?spm=a2g0o.best.search.0)
+- [How to recovery a bricked module](https://www.youtube.com/watch?v=9h_RWsfRnY4)

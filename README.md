@@ -1,5 +1,6 @@
-
 # DCC turnout decoders and boards for Arduino
+
+![](https://github.com/lucadentella/arduino-dcc-turnout-decoders/raw/main/Documentation/SoundShield.jpg)
 
 ## :mega: Introduction / *Introduzione*
 This repository contains all the resources for my tutorials about how to build DCC turnout (accessory) decoders with Arduino.
@@ -12,6 +13,7 @@ This repository contains all the resources for my tutorials about how to build D
  - [Youtube, Tutorial #2](https://youtu.be/kijxEFWHnvc)
  - [Youtube, Tutorial #3](https://youtu.be/DjH3sCA5Gzo)
  - [Youtube, ServoShield](https://youtu.be/rDGcTmMk3Rc)
+ - [Youtube, SoundShield](https://youtu.be/pyPB2XuQQIc)
  - [Youtube, Playlist](https://youtube.com/playlist?list=PL45uNmSXju7mn3bMtVVPlFQmpD3mUI5mi)
  
  - [Officina del Modellismo](https://www.officinamodellismo.com/), to buy our products / *per acquistare i nostri prodotti*
@@ -24,6 +26,7 @@ The [Eagle](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/ma
  - **[PointMotorBoard](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/PointMotorBoard.md)**, to control two DC motors using an H-Bridge IC
  - **[CDU (Capacitor Discharge Unit)](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/CDU.md)**, to provide more current to actuators 
  - **[ServoShield](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/ServoShield.md)**, to create a Servo accessory decoder
+ - **[SoundShield](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/SoundShield.md)**, to create a Sound accessory decoder
 
 *La sottocartella [Eagle](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Eagle) contiene contiene dei [progetti Eagle](https://www.autodesk.com/products/eagle/overview) per realizzare le seguenti schede (clicca sul nome della scheda per aprire la relativa documentazione con elenco componenti, immagini...):*
 
@@ -31,8 +34,14 @@ The [Eagle](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/ma
  - **[PointMotorBoard](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/PointMotorBoard.md)**, per controllare due motori in corrente continua usando un integrato H-Bridge
  - **[CDU (Capacitor Discharge Unit)](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/CDU.md)**, per fornire più corrente agli attuatori
  - **[ServoShield](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/ServoShield.md)**, per realizzare un decoder accessori per servocomandi
+ - **[SoundShield](https://github.com/lucadentella/arduino-dcc-turnout-decoders/blob/main/Documentation/SoundShield.md)**, per realizzare un decoder accessori sonoro
  
 ## :clipboard: Sketches
 The [Arduino](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Arduino) subfolder contains the sketches for implementing the decoders shown in the video tutorials.
 
 *La sottocartella [Arduino](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Arduino) contiene i programmi (sketch) per realizzare i decoder mostrati nei video tutorials.*
+ 
+## :clipboard: Documentation
+The [Documentation](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Documentatiojn) subfolder contains partlist, schematics
+
+*La sottocartella [Documentation](https://github.com/lucadentella/arduino-dcc-turnout-decoders/tree/main/Documentation) contiene la lista dei componenti e gli schemi elettrici*
